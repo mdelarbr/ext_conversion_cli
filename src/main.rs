@@ -1,9 +1,7 @@
 use clap::Parser;
 
-mod conversion;
-mod utils;
-use conversion::csv_to_json::convert_csv_to_json;
-use conversion::json_to_csv::convert_json_to_csv;
+use cli_json_csv::conversion::csv_to_json::convert_csv_to_json;
+use cli_json_csv::conversion::json_to_csv::convert_json_to_csv;
 
 #[derive(Parser)]
 #[command(
